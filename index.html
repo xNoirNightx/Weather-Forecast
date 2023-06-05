@@ -1,30 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
-    <link rel="stylesheet" href="./assets/style.css"
-</head>
+    <link rel="stylesheet" href="./assets/style.css" </head>
+
 <body>
     <header>
         <h1>Weather Forecast</h1>
-      </header>
+    </header>
 
     <main>
-    <section>
-    <form id="search-form">
-    <input type="text" id="city-input" placeholder="City Name">
-    <button type="submit">Search</button>
-    </form>
-    </section>
+        <div id="container">
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+                <div id="city-name"></div>
+                <div id="date"></div>
+                <div id="weather-icon"></div>
+                <div id="temperature"></div>
+                <div id="humidity"></div>
+                <div id="wind-speed"></div>
+            </section>
 
-/*section current
-/*section forecast
-/*section search bar
+        /*section forecast
+        <section id="forecast">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-container"></div>
+        </section>
+
+        /*sidebar section for search bar and history
+        <aside id="sidebar">
+            <section id="search-container">
+                <h2>Search</h2>
+                <form id="search-form">
+                    <input type="text" id="city-input" placeholder="Enter a city name">
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+
+            <section id="search-history">
+                <h2>Search History</h2>
+                <ul id="history-list"></ul>
+            </section>
+        </aside>
+    </main>
 
 
-<script src="./assets/script.js"></script>
+
+
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
