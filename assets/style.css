@@ -1,0 +1,79 @@
+:root {
+    --bg-color: #500011;
+    --primary-color: #f1f7f5;
+    --secondary-color: #464815;
+    --accent-color: #ecbdcf;
+    --accent-color-2: #c01653;
+  }
+  
+  
+  body {
+    background: linear-gradient(to bottom right, var(--primary-color), var(--accent-color));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+  }
+  
+  p {
+    color: var(--accent-color);
+  }
+  
+  .weather-header {
+    background: linear-gradient(to top right, var(--primary-color), var(--accent-color));
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .weather-box {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .weather-header h1 {
+    color: var(--secondary-color);
+  }
+  
+  .form-input {
+    background-color: var(--bg-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  
+  .btn {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+  }
+  
+  #search-history {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+  }
+  
+  #search-button {
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    background-color: #ff007f;
+  }
+  
+  #current-weather {
+    background-color: var(--bg-color);
+    border: 1px solid var(--secondary-color);
+  }
+  
+  #forecast {
+    background-color: var(--bg-color);
+    border: 1px solid var(--secondary-color);
+  }
+  
