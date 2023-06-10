@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #500011;
-    --primary-color: #f1f7f5;
-    --secondary-color: #464815;
-    --accent-color: #ecbdcf;
-    --accent-color-2: #c01653;
+    --bg-color: #FFFFFF;
+    --primary-color: #6AB1FF;
+    --secondary-color: #F0F0F0;
+    --accent-color: #FF8C00;
+    --accent-color-2: #FFC107;
   }
   
   
@@ -53,9 +53,11 @@
     background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
   }
-  
+  #search-button{
+    background-color: var(--accent-color);
+  }
   #search-button:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--bg-color);
     border: none;
     padding: 10px 20px;
@@ -71,17 +73,20 @@
     cursor: pointer;
   }
   
-  #search-button, #clear-history-button:hover {
-    background-color: #ff007f;
+  #search-button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  #clear-history-button:hover {
+    background-color: var(--accent-color);
   }
   
   #current-weather {
-    background-color: var(--bg-color);
-    border: 1px solid var(--secondary-color);
+    background-color: var(--accent-color);
+    border: 1px solid var(--bg-color);
   }
   
   #forecast {
-    background-image: url(./images/background.png);
     border: 1px solid var(--secondary-color);
   }
   
@@ -89,19 +94,17 @@
   /* api style */
 
   #current-date {
-    color: var(--secondary-color);
+    color: var(--bg-color);
     font-size: 20px;
     margin-bottom: 10px;
   }
-  
   #current-weather h2 {
-    color: var(--secondary-color);
+    color: var(--bg-color);
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
   #current-weather p {
-    color: var(--accent-color);
+    color: var(--bg-color);
   }
   
   #five-day {
