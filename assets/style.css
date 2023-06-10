@@ -54,7 +54,15 @@
     border: 1px solid var(--secondary-color);
   }
   
-  #search-button {
+  #search-button:hover{
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  #clear-history-button:hover{
     background-color: var(--secondary-color);
     color: var(--bg-color);
     border: none;
@@ -63,7 +71,7 @@
     cursor: pointer;
   }
   
-  #search-button:hover {
+  #search-button, #clear-history-button:hover {
     background-color: #ff007f;
   }
   
@@ -73,7 +81,7 @@
   }
   
   #forecast {
-    background-color: var(--bg-color);
+    background-image: url(./images/background.png);
     border: 1px solid var(--secondary-color);
   }
   

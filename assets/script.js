@@ -55,6 +55,19 @@ function storeSearchHistory(cityName) {
     renderSearchHistory();
   }
 }
+function renderSearchHistory() {
+  searchHistoryContainer.empty();
+  let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
+  for (let i = searchHistory.length - 1; i >= 0; i--) {
+    const searchBtn = `<button type="button" class="history-btn" data-search="${searchHistory[i]}">${searchHistory[i]}</button>`;
+    searchHistoryContainer.append(searchBtn);
+  }
+  if (searchHistory.length > 0) {
+    const clearHistoryBtn = `<button type="button" id="clear-history-button" class="btn btn-danger">Clear History</button>`;
+    searchHistoryContainer.append(clearHistoryBtn);
+  }
+}
+
 
 
 //  current weather 
