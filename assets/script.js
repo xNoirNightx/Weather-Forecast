@@ -90,8 +90,8 @@ function displayCurrentWeather(data) {
   const currentWeatherElement = `
     <h2>${cityName} (${currentDate}) <img src="https://openweathermap.org/img/wn/${weatherIcon}.png" alt="Weather Icon"></h2>
     <p>Temperature: ${temperature}°C</p>
-    <p>Wind Speed: ${windSpeed}m/s</p>
-    <p>Humidity: ${humidity}%</p>
+    <p>Wind Speed: ${windSpeed} km/h</p>
+    <p>Humidity: ${humidity} %</p>
   `;
   currentWeatherContainer.append(currentWeatherElement);
 }
@@ -117,8 +117,8 @@ function fiveDayForecast(cityName) {
             <p>${forecastDate}</p>
             <p><img src="https://openweathermap.org/img/wn/${forecastIcon}.png"></img></p>
             <p>Temp: <span>${forecastTemp}°C</span></p>
-            <p>Wind: <span>${forecastWind}m/s</span></p>
-            <p>Humidity: <span>${forecastHumidity}%</span></p>
+            <p>Wind: <span>${forecastWind} km/h</span></p>
+            <p>Humidity: <span>${forecastHumidity} %</span></p>
           </div>
         `;
         fiveDayContainer.append(forecastElement);
