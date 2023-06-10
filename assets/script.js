@@ -47,6 +47,15 @@ fetch(currentWeatherURL)
 }
 
 // history 
+function storeSearchHistory(cityName) {
+  let searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
+  if (!searchHistory.includes(cityName)) {
+    searchHistory.push(cityName);
+    localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+    renderSearchHistory();
+  }
+}
+
 
 //  current weather 
 
