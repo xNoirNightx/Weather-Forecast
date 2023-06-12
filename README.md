@@ -5,10 +5,11 @@
 
 I was tasked with my 6th challenge to make a weather dashboard.
 - Learn how frusterating APIs are.
-- Over 30 hours of problem solving and constant bug fixing. 
+- Over 40 hours of problem solving and constant bug fixing. 
 - Learned how to add inits.
 - Working on condensing JS.
 - Learned to work more with jQuery and Day.js
+- Learning to work with bootstrap more.
 
 > **Note**: I need to work on my JS , I am relying heavily on the class material and googling way to many of my questions.
 unlike with HTML and CSS I struggle with coding this smoothly and find myself getting frusterate more than enjoying it . I want to be
@@ -39,7 +40,7 @@ I followed the criteria below provided by the class instructors.
 
 The following image shows the welcome screen of my quiz.
 
-![Weather Dashboard ](./)
+![Weather Dashboard ](./assets/images/screenshot.png)
 
 > **Note**: This layout image is screen shot from a desktop computers web browser. It displays differently vs on Vscode.
 

@@ -6,7 +6,6 @@
     --accent-color-2: #FFC107;
   }
   
-  
   body {
     background: linear-gradient(to bottom right, var(--primary-color), var(--accent-color));
     background-size: cover;
@@ -17,82 +16,77 @@
   h1, h2, h3, h4, h5, h6 {
     color: var(--secondary-color);
   }
-  
   p {
     color: var(--accent-color);
   }
-  
   .weather-header {
     background: linear-gradient(to top right, var(--primary-color), var(--accent-color));
     padding: 20px;
     text-align: center;
   }
-  
   .weather-box {
     background-color: var(--primary-color);
     padding: 20px;
     border: 1px solid var(--secondary-color);
   }
-  
   .weather-header h1 {
     color: var(--secondary-color);
   }
-  
   .form-input {
     background-color: var(--bg-color);
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
   }
-  
   .btn {
     background-color: var(--secondary-color);
     color: var(--bg-color);
   }
   
+  /* left side bar */
+  #city-search {
+    color: #FF8C00;
+  }
+  #search-button{
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    transition: 2s ease;
+  }
+  #search-button:hover {
+    box-shadow: none;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
   #search-history {
     background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
   }
-  #search-button{
-    background-color: var(--accent-color);
-  }
-  #search-button:hover{
-    background-color: var(--primary-color);
-    color: var(--bg-color);
+  #clear-history-button {
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    color: var(--accent-color);
+    transition: 2s ease;
   }
-  #clear-history-button:hover{
-    background-color: var(--secondary-color);
-    color: var(--bg-color);
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #search-button:hover {
-    background-color: var(--accent-color);
-  }
-  
   #clear-history-button:hover {
-    background-color: var(--accent-color);
+    border-radius: 2px;
+    box-shadow: 0 0 30px var(--accent-color-2);
+    border: none;
+    box-shadow: none;
   }
-  
+  #btn-danger{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+/* center */
   #current-weather {
     background-color: var(--accent-color);
     border: 1px solid var(--bg-color);
   }
-  
   #forecast {
     border: 1px solid var(--secondary-color);
   }
   
 
-  /* api style */
-
+  /* api */
   #current-date {
     color: var(--bg-color);
     font-size: 20px;
@@ -106,27 +100,23 @@
   #current-weather p {
     color: var(--bg-color);
   }
-  
   #five-day {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
   }
-  
   #five-day .col-2 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    flex: 0 0 15%;
+    max-width: 15%;
     padding: 10px;
     border: 1px solid var(--secondary-color);
     background-color: var(--bg-color);
     color: var(--secondary-color);
   }
-  
   #five-day img {
     display: block;
     margin: 0 auto;
   }
-  
   #five-day p {
     margin-bottom: 5px;
   }
